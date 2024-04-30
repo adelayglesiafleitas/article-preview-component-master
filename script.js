@@ -4,7 +4,7 @@ const contShare = document.getElementById("cont_share");
 const arrow = document.getElementById("arrow");
 
 buttonAvatar.addEventListener("click", () => {
-  const width = window.innerWidth;
+  const width = window.innerWidth;//REVISO LA RESOLUCION
   if (width >= 1440) {
     if (contShare.classList.contains("hidden")) {
       contShare.classList.remove("hidden");
@@ -23,7 +23,7 @@ buttonAvatar.addEventListener("click", () => {
 });
 
 buttonShare.addEventListener("click", () => {
-  const width = window.innerWidth;
+  const width = window.innerWidth;//REVISO LA RESOLUCION
   if (width < 1440) {
     contShare.classList.add("hidden");
   }
