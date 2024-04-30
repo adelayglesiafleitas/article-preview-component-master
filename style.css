@@ -97,7 +97,12 @@ button {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
+button:hover {
+  box-shadow: 3px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
 .container__avatar_data h3 {
   color: var(--VeryDarkGrayishBlue);
   font-size: 1.2em;
@@ -131,7 +136,7 @@ button {
   margin-left: 39px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transform: translatey(-6px);
+  transform: translatey(-2px);
 }
 .container__share_logo {
   display: flex;
@@ -139,7 +144,7 @@ button {
 }
 .container__share_logo img {
   margin-right: 20px;
-  transform: translatey(-6px);
+  transform: translatey(-2px);
 }
 #button_share {
   transform: translatey(-6px);
@@ -153,8 +158,16 @@ button {
 .container__shareJS {
   width: 250px;
   height: 57px;
-  transform: translate(163.5px, -136px);
+  transform: translate(230px, -136px);
   border-radius: 10px;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 35px solid var(--VeryDarkGrayishBlue);
+  transform: translate(335px, -105px) rotate(57deg);
 }
 
 /*****container__share*/

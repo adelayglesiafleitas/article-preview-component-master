@@ -1,8 +1,7 @@
 const buttonAvatar = document.getElementById("button_avatar");
 const buttonShare = document.getElementById("button_share");
 const contShare = document.getElementById("cont_share");
-
-
+const arrow = document.getElementById("arrow");
 
 buttonAvatar.addEventListener("click", () => {
   const width = window.innerWidth;
@@ -11,8 +10,10 @@ buttonAvatar.addEventListener("click", () => {
       contShare.classList.remove("hidden");
       contShare.classList.add("container__shareJS");
       buttonShare.classList.add("hidden");
+      arrow.classList.remove("hidden");
     } else {
       contShare.classList.add("hidden");
+      arrow.classList.add("hidden");
     }
   } else if (width < 1440) {
     contShare.classList.remove("container__shareJS");
